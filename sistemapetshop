@@ -44,10 +44,22 @@ DROP COLUMN nomeanimal;
 ALTER TABLE animal
 ADD COLUMN nomeanimalzinho CHAR(50) NOT NULL;
 
+--Insira os dados "Ana Claudia Cunha" para nome da cliente, telefone 11999998888, e cpf 1144444411 na tabela do cliente. 
 INSERT INTO cliente (cpf, nomecompleto, telefonecliente)
 VALUES (1144444411, 'Ana Claudia Cunha', '(11)999998888');
 
+--Por fim, realize a exclusão dos dados da tabela cliente
 DELETE FROM cliente
 WHERE cpf = 1144444411;
 
-DROP TABLE
+--Realize a exclusão de cada uma das tabelas
+DROP TABLE cliente;
+
+DROP TABLE animal;
+
+DROP TABLE veterinario;
+
+DROP TABLE consulta;
+
+-- Realize a exclusão do banco de dados
+DROP DATABASE sistemapetshop;
